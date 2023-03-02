@@ -1,0 +1,74 @@
+/* global */
+
+body,
+a,
+ul {
+  margin: 0;
+}
+.container {
+  padding: 16px 5rem;
+}
+@media screen and (max-width: 468px) {
+  .container {
+    padding: 16px 24px;
+  }
+}
+
+/* end global */
+
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 16px 24px; */
+}
+.header > a {
+  font-size: 1.1rem;
+}
+a {
+  text-decoration: none;
+}
+
+.header > ul {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+}
+.header a {
+  color: rgb(0, 0, 0, 0.8);
+}
+/* end header */
+
+/* banner */
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../assets/img/bg-masthead.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.text-center {
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+}
+.text-center > h1 {
+  font-size: 6.5rem;
+  line-height: 6.5rem;
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.text-center > p {
+  font-size: 1.25rem;
+  margin-left: 550px;
+  margin-right: 550px;
+}
+
+/* end banner */

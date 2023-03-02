@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Problem2</title>
+    <script src="./arr.js" defer></script>
+  </head>
+  <style>
+    @font-face {
+      font-family: poppin;
+      src: url("../assets/font/Poppins/Poppins-Light.ttf");
+    }
+    @font-face {
+      font-family: poppin-semi-bold;
+      src: url("../assets/font/Poppins/Poppins-SemiBold.ttf");
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: poppin;
+    }
+    .generator {
+      height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+    .generator-card {
+      border: 1px solid tomato;
+      padding: 16px 16px 16px 16px;
+      width: 50%;
+      min-width: 400px;
+    }
+    .generator_group {
+      display: flex;
+      justify-content: space-between;
+    }
+    p,
+    span {
+      font-size: 14px;
+    }
+    p,
+    h2 {
+      margin: 0;
+    }
+    h2 {
+      color: dodgerblue;
+      margin-bottom: 16px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      font-family: poppin-semi-bold;
+    }
+    input {
+      outline: none;
+    }
+  </style>
+
+  <body>
+    <div class="generator">
+      <div class="generator-card">
+        <h2>Random Array Generator</h2>
+        <div class="generator_group">
+          <span>Length:</span>
+          <input type="text" />
+          <button>Generate</button>
+        </div>
+        <p>Result: <span class="generator-result"></span></p>
+      </div>
+    </div>
+  </body>
+</html>
