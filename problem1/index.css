@@ -2,12 +2,17 @@
 
 body,
 a,
-ul {
+ul,
+h1,
+h2,
+h3,
+p {
   margin: 0;
 }
 .container {
   padding: 16px 5rem;
 }
+
 @media screen and (max-width: 468px) {
   .container {
     padding: 16px 24px;
@@ -46,29 +51,215 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 800px;
+  position: relative;
 }
 .text-center {
   text-align: center;
-  display: inline-block;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   color: rgba(255, 255, 255, 0.5);
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 100%;
   justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
 }
 .text-center > h1 {
   font-size: 6.5rem;
   line-height: 6.5rem;
   letter-spacing: 0.8rem;
   text-transform: uppercase;
-  margin-bottom: 0;
 }
+
 .text-center > p {
-  font-size: 1.25rem;
-  margin-left: 550px;
-  margin-right: 550px;
+  color: white;
+  max-width: 500px;
+  opacity: 0.5;
+  margin-bottom: 40px;
+}
+
+.btn {
+  padding: 16px 32px;
+  border: none;
+  background-color: #64a19d;
+  color: white;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.text-bottom > h2 {
+  color: white;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+.text-bottom > p {
+  color: white;
+  max-width: 500px;
+  opacity: 0.5;
+}
+.text-bottom {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 32px;
+  right: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 468px) {
+  .text-center > h1 {
+    font-size: 2rem !important;
+  }
 }
 
 /* end banner */
+
+/* main 2 */
+.main-2 {
+  margin-top: 100px;
+  display: flex;
+}
+.main-2 > img {
+  width: 60%;
+  aspect-ratio: 16/9;
+}
+.main_right {
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  display: inline-flex;
+}
+.main_right div {
+  border-left: 5px solid #64a19d;
+  padding: 0 16px;
+}
+@media screen and (max-width: 768px) {
+  .banner {
+    height: 700px;
+  }
+  .main-2 {
+    display: block !important;
+  }
+  .main_right {
+    display: flex !important;
+  }
+  .main-2 > img {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .main_right div {
+    border: none;
+  }
+}
+/* ./ main 2 */
+
+.img-content {
+  display: flex;
+}
+
+.img-content img {
+  width: 50%;
+  aspect-ratio: 16/9;
+}
+.img-content div {
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.img-content:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.img_container {
+  margin-top: 24px;
+}
+
+.img-content h4 {
+  opacity: 0.6;
+}
+.img-content p {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+  .img-content {
+    display: block !important;
+  }
+  .img-content img {
+    width: 100%;
+  }
+  .img-content div {
+    background-color: white;
+    color: black;
+    padding-bottom: 8px;
+  }
+  .img-content h4 {
+    opacity: 1;
+  }
+  .img-content p {
+    opacity: 1;
+  }
+}
+
+/* footer  */
+section .section_end {
+  margin-top: 80px;
+}
+.footer_container {
+  background-image: url("../assets/img/bg-signup.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding: 120px 0;
+  position: relative;
+}
+.form button {
+  padding: 16px 32px;
+  border: none;
+  background-color: #64a19d;
+  color: white;
+  text-transform: uppercase;
+}
+
+.footer_container .container {
+  text-align: center;
+  color: white;
+}
+.footer_container h2 {
+  font-weight: 320;
+  font-size: 32px;
+  margin: 10px 0;
+  position: relative;
+}
+.footer_container input {
+  border: none;
+  outline: none;
+  width: 40%;
+  padding: 16px;
+  margin-right: 16px;
+}
+
+footer {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 32px;
+  right: 0;
+  left: 0;
+}
