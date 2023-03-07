@@ -1,7 +1,6 @@
-const isNumeric = (num) => {
+const isNumeric = (num) =>
     (typeof num === "number" || (typeof num === "string" && num.trim() !== "")) &&
     !isNaN(num);
-};
 const randomNumber = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1) + min);
 };
